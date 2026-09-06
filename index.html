@@ -788,12 +788,13 @@ const ROLE_TEMPLATES = {
   finance: {name:"财务",   perms:{view:1,search:1,export:1,viewLog:1}},
   viewer:  {name:"只读访客",perms:{view:1,search:1}},
 };
+// 静态演示版：不含任何真实口令，账号由 static-shim.js 预置只读演示账号
 const DEFAULT_USERS = [
-  {user:"admin",   name:"管理员", pwd:"admin@2026", role:"admin",   perms:allTrue()},
-  {user:"sales",   name:"业务员", pwd:"sales123",   role:"sales",   perms:Object.assign({},ROLE_TEMPLATES.sales.perms)},
-  {user:"store",   name:"门店",   pwd:"store123",   role:"store",   perms:Object.assign({},ROLE_TEMPLATES.store.perms)},
-  {user:"caiwu",   name:"财务",   pwd:"caiwu123",   role:"finance", perms:Object.assign({},ROLE_TEMPLATES.finance.perms)},
-  {user:"viewer",  name:"只读访客",pwd:"viewer123", role:"viewer",  perms:Object.assign({},ROLE_TEMPLATES.viewer.perms)},
+  {user:"admin",   name:"管理员", pwd:"CHANGE_ME", role:"admin",   perms:allTrue()},
+  {user:"sales",   name:"业务员", pwd:"CHANGE_ME",   role:"sales",   perms:Object.assign({},ROLE_TEMPLATES.sales.perms)},
+  {user:"store",   name:"门店",   pwd:"CHANGE_ME",   role:"store",   perms:Object.assign({},ROLE_TEMPLATES.store.perms)},
+  {user:"caiwu",   name:"财务",   pwd:"CHANGE_ME",   role:"finance", perms:Object.assign({},ROLE_TEMPLATES.finance.perms)},
+  {user:"viewer",  name:"只读访客",pwd:"CHANGE_ME", role:"viewer",  perms:Object.assign({},ROLE_TEMPLATES.viewer.perms)},
 ];
 const IMG_COLS = ["车辆图片","身份证图片","协议图片","车辆归还图片","行驶证","车架号图片","车牌号图片","更换后车牌图片"];
 const SENSITIVE = ["用户手机号","身份证信息","联系人手机号","顺丰租车用户"];
