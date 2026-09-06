@@ -1,0 +1,1 @@
+{"users": [{"user": "demo", "name": "演示访客（只读）", "pwd": "", "role": "viewer", "perms": {"view": true, "search": true}}]}
