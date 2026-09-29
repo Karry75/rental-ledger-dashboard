@@ -1,5 +1,18 @@
 # 租车协议交互台账 · 在线看板
 
+## 在线访问
+
+- 本站看板（在线）：https://karry75.github.io/rental-ledger-dashboard/
+- 全部看板作品集（导航页）：https://karry75.github.io/dashboard-portal/
+
+## 技术速览
+
+- **形态**：单文件静态看板（HTML + JavaScript + ECharts），数据以离线快照形式随页面加载，纯前端渲染、无后端依赖。
+- **原理**：业务库（阿里云 AnalyticDB）→ Python 抽取/构建管线 → 脱敏聚合快照 → 静态页面；页面打开即渲染，支持按维度筛选与下钻。
+- **用途**：深圳嘟嘟租赁车辆名单看板：在租车辆与租期台账。
+- **脱敏**：公开发布版本已移除数据库连接信息、账号口令与个人敏感字段，仅保留聚合指标。
+
+
 > 🔗 **在线预览**：https://karry75.github.io/rental-ledger-dashboard/
 >
 > 一个面向「两轮电动车电池租车」业务的**协议全生命周期管理台账 + 数据看板**。
